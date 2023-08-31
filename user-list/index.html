@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rating</title>
+    <title>User List</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,101 +20,206 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card rounded-3 bg-light border-0 shadow-lg mt-5">
-        <div class="card-body">
+    <header class="mb-5">
+      <div class="container mt-5">
+        <div class="d-flex justify-content-end">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">
+                  Dark
+                </button>
 
-          <!-- Top row -->
-          <div class="row p-5">
-            <div class="col-7">
-              <h2 class="fw-bold">What others think about the product</h2>
+                <button class="btn btn-light btn-sm" data-bs-theme-value="light">
+                  Light
+                </button>
             </div>
-            <div class="col-5">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="display-5 fw-semibold">
-                    <i class="fas fa-star text-warning"></i>
-                    4.8
-                  </h4>
-                  <p class="text-center">Average Rating</p>
-                </div>
-              </div>
-            </div>
+        </div>
+        <h1 class="mb-4">Users</h1>
+
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control form-control-lg" placeholder="Search users">
           </div>
+          <div class="col-md-8 d-flex justify-content-center justify-content-sm-center  justify-content-md-end  align-items-center mt-3 mt-sm-3 mt-md-0">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Reputation</a>
+              </li>
 
-          <!-- Search Bar -->
-          <div class="row px-5">
-            <div class="col-12">
-              <div class="input-group">
-                  <span class="input-group-text rounded-start-5 ">
-                    <i class="fas fa-search"></i>
-                  </span>
-                  <input type="text" class="form-control rounded-end-5" placeholder="Search Reviews" >
-              </div>
-            </div>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-bg-primary rounded-3">New Users</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Editor</a>
+              </li>
+            </ul>
           </div>
-
-          <!-- Progress bar -->
-          <div class="row p-5">
-            <div class="col-12 vstack gap-2">
-              <div class="d-flex align-items-center gap-1">
-                <span>5</span>
-                <i class="fas fa-star text-warning"></i>
-                <div class="progress" style="width: 100%;">
-                  <div class="progress-bar bg-warning" role="progressbar" aria-label="rating" aria-valuenow="80" aria-valuemin="0" style="width: 80%;" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center gap-1">
-                <span>4</span>
-                <i class="fas fa-star text-warning"></i>
-                <div class="progress" style="width: 100%;">
-                  <div class="progress-bar bg-warning" role="progressbar" aria-label="rating" aria-valuenow="60" aria-valuemin="0" style="width: 60%;" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center gap-1">
-                <span>3</span>
-                <i class="fas fa-star text-warning"></i>
-                <div class="progress" style="width: 100%;">
-                  <div class="progress-bar bg-warning" role="progressbar" aria-label="rating" aria-valuenow="40" aria-valuemin="0" style="width: 40%;" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center gap-1">
-                <span>2</span>
-                <i class="fas fa-star text-warning"></i>
-                <div class="progress" style="width: 100%;">
-                  <div class="progress-bar bg-warning" role="progressbar" aria-label="rating" aria-valuenow="10" aria-valuemin="0" style="width: 10%;" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center gap-1">
-                <span>1</span>
-                <i class="fas fa-star text-warning"></i>
-                <div class="progress" style="width: 100%;">
-                  <div class="progress-bar bg-warning" role="progressbar" aria-label="rating" aria-valuenow="5" aria-valuemin="0" style="width: 5%;" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-
-          <!-- button -->
-          <div class="row px-5 py-3">
-            <div class="col-12">
-              <a  href="#" class="btn btn-success rounded-5">
-                Write Review
-              </a>
-            </div>
-          </div>
-
-          
         </div>
       </div>
-      
-    </div>
+    </header>
+
+    <main>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="https://google.com" class="text-decoration-none">
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                      <div class="user-img">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="img-fluid rounded-circle">
+                      </div>
+                      <div class="user-info text-center text-sm-center text-md-start">
+                        <h4>Jhon Doe</h4>
+                        <h6>Troy MI</h6>
+                        <span class="badge bg-primary">Coding</span>
+                        <span class="badge bg-primary">Nature</span>
+                        <span class="badge bg-primary">Travel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="d-flex gap-3 flex-column justify-content-center justify-content-md-between align-items-center  align-items-md-start flex-md-row">
+                    <div class="user-img">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="user-info text-center text-sm-center text-md-start">
+                      <h4>Jhon Doe</h4>
+                      <h6>Troy MI</h6>
+                      <span class="badge bg-primary">Coding</span>
+                      <span class="badge bg-primary">Nature</span>
+                      <span class="badge bg-primary">Travel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </main>
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
