@@ -34,9 +34,11 @@
     border-color: transparent;
 }
 
-.svgWave{
-    outline: none;
+.numberInput::-webkit-inner-spin-button {
+ display: none;
+ -moz-appearance: textfield;
 }
+
 
 @media (max-width:1000px) {
     .navbar {
